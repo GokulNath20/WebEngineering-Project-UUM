@@ -59,7 +59,7 @@ include('db.php');
             }
         } else {
             echo "<div class='form'>
-                  <h3>Incorrect Username/ID/password.</h3><br/>
+                  <h3>Incorrect Username/ID/Password.</h3><br/>
                   </div>";
         }
     } else {
