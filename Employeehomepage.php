@@ -23,6 +23,8 @@ include('db.php');
     background: url('Home Screen.png') no-repeat center fixed;
     background-size: cover;
   }
+  p {text-align: center;
+  font-size: 25px;}
 </style>
 
 <body>
@@ -58,22 +60,21 @@ include('db.php');
     <div class="mySlides w3-display-container w3-center">
       <img src="assets/Home Screen.png" width="110%">
       <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-        <h3>Los Angeles</h3>
-        <p><b>We had the best time playing at Venice Beach!</b></p>
+        <h3><b>WELCOME BACK</b></h3>
       </div>
     </div>
     <div class="mySlides w3-display-container w3-center">
-      <img src="assets/first.jpg" style="width:100%">
+      <img src="assets/chinesenewyear.jpg" style="width:100%">
       <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-        <h3>New York</h3>
-        <p><b>The atmosphere in New York is lorem ipsum.</b></p>
+        <h3><b>HAPPY CHINESE NEW YEAR</b></h3>
+        
       </div>
     </div>
     <div class="mySlides w3-display-container w3-center">
-      <img src="assets/Home Screen.png" style="width:110%">
+      <img src="assets/follow sop.jpeg" style="width:110%">
       <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-        <h3>Chicago</h3>
-        <p><b>Thank you, Chicago - A night we won't forget.</b></p>
+        <h3><b>FOLLOW THE SOP's</b></h3>
+        
       </div>
     </div>
 
@@ -81,66 +82,26 @@ include('db.php');
     <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="">
       <h2 class="w3-wide">ABOUT US</h2>
       <p class="w3-opacity"><i>Together We Achieve More</i></p>
-      <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p class="w3-justify"></p>
       <div class="w3-row w3-padding-32">
-        <div class="w3-third">
-          <p>Name</p>
+        <div align='center'>
+          <p>GOKUL NATH</p>
           <img src="assets/Home Screen.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+          <p align='center'>Director</p><br>
         </div>
-        <div class="w3-third">
-          <p>Name</p>
+        <div align='center'>
+          <p>RAHYAN UDDIN</p>
           <img src="assets/Home Screen.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-        </div>
-        <div class="w3-third">
-          <p>Name</p>
-          <img src="assets/Home Screen.png" class="w3-round" alt="Random Name" style="width:60%">
+          <p align='center'>Assistance Director</p>
         </div>
       </div>
     </div>
 
     <!-- The Tour Section -->
-    <div class="w3-black" id="scan">
-      <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-        <h2 class="w3-wide w3-center">TOUR DATES</h2>
-        <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
-
-        <ul class="w3-ul w3-border w3-white w3-text-grey">
-          <li class="w3-padding">September <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-          <li class="w3-padding">October <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-          <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3</span></li>
-        </ul>
-
-        <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-          <div class="w3-third w3-margin-bottom">
-            <img src="images/first.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
-            <div class="w3-container w3-white">
-              <p><b>New York</b></p>
-              <p class="w3-opacity">Fri 27 Nov 2016</p>
-              <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-              <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-            </div>
-          </div>
-          <div class="w3-third w3-margin-bottom">
-            <img src="images/first.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
-            <div class="w3-container w3-white">
-              <p><b>Paris</b></p>
-              <p class="w3-opacity">Sat 28 Nov 2016</p>
-              <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-              <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-            </div>
-          </div>
-          <div class="w3-third w3-margin-bottom">
-            <img src="images/first.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
-            <div class="w3-container w3-white">
-              <p><b>San Francisco</b></p>
-              <p class="w3-opacity">Sun 29 Nov 2016</p>
-              <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-              <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-            </div>
-          </div>
-        </div>
+    <div class="w3-white" id="scan">
+      <div align='center' class="w3-container w3-content w3-padding-64" style="max-width:800px"/ onblur='generateBarCode();'>
+      <p><b>Please scan your attendance</b></p>
+        <img id='barcode' src="https://api.qrserver.com/v1/create-qr-code/?data=ATTENDANCE RECORDED&amp;size=100x100" alt="" title="HELLO" width="200" height="200" />
       </div>
     </div>
 
@@ -181,43 +142,42 @@ include('db.php');
               <td class="tl-1">
                 <div align="left" id="tb-name">EmployeeId:</div>
               </td>
-              <td class="tl-4"><?php echo $rows['employee_id']; ?></td>
+              <td class="tl-4"><?php echo $array['employee_id'] = $rows['employee_id']; ?></td>
             </tr>
             <tr id="lg-1">
               <td class="tl-1">
                 <div align="left" id="tb-name">Username:</div>
               </td>
-              <td class="tl-4"><?php echo $rows['username']; ?></td>
+              <td class="tl-4"><?php echo $array['username'] = $rows['username']; ?></td>
             </tr>
             <tr id="lg-1">
               <td class="tl-1">
                 <div align="left" id="tb-name">Email:</div>
               </td>
-              <td class="tl-4"><?php echo $rows['email']; ?></td>
+              <td class="tl-4"><?php echo $array['email'] = $rows['email']; ?></td>
             </tr>
             <tr id="lg-1">
               <td class="tl-1">
                 <div align="left" id="tb-name">Type:</div>
               </td>
-              <td class="tl-4"><?php echo $rows['usertype']; ?></td>
+              <td class="tl-4"><?php echo $array['usertype'] = $rows['usertype']; ?></td>
             </tr>
           </table>
         </form>
-      <?php              // close while loop 
-      }
+      <?php
+      } // close while loop
       ?>
       </br>
       </form>
     </div>
+  </div>
 
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="logout">
-    </div>
-
-    <!-- End Page Content -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="logout">
+    <p><a href="logout.php">Logout</a></p>
   </div>
 
   <!-- Image of location/map -->
-  <img src="assets/Home Screen.png" class="w3-image w3-greyscale-min" style="width:100%">
+
 
   <!-- Footer -->
   <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
@@ -266,6 +226,13 @@ include('db.php');
         modal.style.display = "none";
       }
     }
+
+    function generateBarCode() 
+{
+    var nric = $('#text').val();
+    var url = 'https://api.qrserver.com/v1/create-qr-code/?data=' + nric + '&amp;size=50x50';
+    $('#barcode').attr('src', url);
+}
   </script>
 
 </body>

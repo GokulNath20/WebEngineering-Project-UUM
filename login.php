@@ -1,4 +1,3 @@
-
 <?php
 include('db.php');
 ?>
@@ -16,7 +15,7 @@ include('db.php');
             margin-right: auto;
         }
     </style>
-</head>
+
 </head>
 
 <body>
@@ -56,33 +55,41 @@ include('db.php');
                 <script type="text/javascript">
                     window.location.href = "Employeehomepage.php"
                 </script>
-        <?php
+    <?php
             }
         } else {
             echo "<div class='form'>
                   <h3>Incorrect Username/ID/password.</h3><br/>
-                  <p class='link'>Click here to <a href='login.php'>Login</a> again.</p>
                   </div>";
         }
     } else {
-        ?>
-        <form class="form" method="post" name="login">
-            <img src="assets/bushwell.jpg" alt="Company logo" class="center" width="100" height="100">
-            <h1 class="login-title">BUSHWELL CORPORATION</h1>
-            <input type="text" class="login-input" name="username" placeholder="Username" autofocus="true" required />
-            <input type="text" class="login-input" name="employee_id" placeholder="Employee ID" required />
-            <input type="password" class="login-input" name="password" placeholder="Password" required />
-            <select name="usertype">
-                <option value="Employer">Employer</option>
-                <option value="Employee">Employee</option>
-            </select>
-            <input type="submit" value="Login" name="submit" class="login-button" />
-            <p class="link"><a href="send_link.php">Forgot Password?</a></p>
-            <p class="link">Don't have an account? <a href="registration.php">Register Now</a></p>
-        </form>
-    <?php
+    }
+
+    function getid($username)
+    {
+
+        include_once("dbconnect.php");
+        $query    = "SELECT * FROM `users` WHERE username='$username'";
+        $result = $conn->query($$query);
+        while ($row = $result->fetch_assoc()) {
+            return $row['username'];
+        }
     }
     ?>
+    <form class="form" method="post" name="login">
+        <img src="assets/bushwell.jpg" alt="Company logo" class="center" width="100" height="100">
+        <h1 class="login-title">BUSHWELL CORPORATION</h1>
+        <input type="text" class="login-input" name="username" placeholder="Username" autofocus="true" required />
+        <input type="text" class="login-input" name="employee_id" placeholder="Employee ID" required />
+        <input type="password" class="login-input" name="password" placeholder="Password" required />
+        <select name="usertype">
+            <option value="Employer">Employer</option>
+            <option value="Employee">Employee</option>
+        </select>
+        <input type="submit" value="Login" name="submit" class="login-button" />
+        <p class="link"><a href="send_link.php">Forgot Password?</a></p>
+        <p class="link">Don't have an account? <a href="registration.php">Register Now</a></p>
+    </form>
 </body>
 
 </html>
